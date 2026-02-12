@@ -6,6 +6,6 @@ LISTA DE TAREFAS SEMANAIS:
 3) Iniciar a programação das ferramentas do envelope de risco
 4) Prospectar plataformas que conectem broker à IA
 5) Criar um esboço de um TFT preditivo para datasets globais multivariados
-6) Criar códigos para as ferramentas financeiras para o dataset OHLC
+6) Criar códigos para as ferramentas financeiras para o dataset OHLC ☺
 
 OBS: Crie uma pasta para seu diário de progresso diário e para planejamentos semanais 
