@@ -4,7 +4,7 @@ LISTA DE TAREFAS SEMANAIS:
 1) Cria repositório no Git com o nome do projeto Libellula ☺
 2) Conectar o ChatGPT com o repositório através do Códex ☺
 3) Iniciar a programação das ferramentas do envelope de risco
-4) Prospectar plataformas que conectem broker à IA
+4) Prospectar plataformas que conectem broker à IA ☺
 5) Criar um esboço de um TFT preditivo para datasets globais multivariados
 6) Criar códigos para as ferramentas financeiras para o dataset OHLC ☺
 
