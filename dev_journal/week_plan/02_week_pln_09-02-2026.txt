@@ -8,4 +8,6 @@ LISTA DE TAREFAS SEMANAIS:
 5) Criar um esboço de um TFT preditivo para datasets globais multivariados
 6) Criar códigos para as ferramentas financeiras para o dataset OHLC ☺
 
+☺ = Tarefa cumprida (cumprimentos atualizados ao fim do prazo)
+
 OBS: Crie uma pasta para seu diário de progresso diário e para planejamentos semanais 
