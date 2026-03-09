@@ -30,7 +30,7 @@
 ## :bookmark_tabs: Observações
 - O método ```setup()``` para pré-processamento dos dados do dataset e o modelo inicial do EPF foram criados no mesmo notebook: ```notebooks/risk_envelope/setup_n_epf_sketch.ipynb```
 - Posteriormente o EPF foi movido para um notebook próprio, chamado apenas de ```notebooks/epf.ipynb```
-- O método ```setup()``` foi migrado para o formato ```.py``` e agora é acessado pelo EPF via importação. O novo arquivo ```setup.py``` está na pasta ```Liballula/src/```
+- O método ```setup()``` foi migrado para o formato ```.py``` e agora é acessado pelo EPF via importação. O novo arquivo ```setup.py``` está na pasta ```Libellula/src/```
 ## :thought_balloon: Próximos passos
 - Criar novas ferramentas para o envelope de risco! 
 ## versionamento
