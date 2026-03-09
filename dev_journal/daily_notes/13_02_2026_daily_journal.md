@@ -9,9 +9,11 @@
 ***(Objetivos são programados no planejamento semanal na pasta ```week_pln```).***
 - Criar ferramentas do envelope de risco
 ## :wrench: Atividades
-- Iniciei a criação de um método chamado ```setup()``` para pré-processamento dos dados em ```.csv``` contendo os dados de cotação + ferramentas financeiras.
+- Iniciei a criação de um método chamado ```setup()``` para pré-processamento dos dados do dataset (formato ```.csv```) contendo os dados de cotação + ferramentas financeiras.
+- Este método deve ser usado para pré-processar quaisquer dados financeiros (incluindo aqueles cujo dataset já foi acrescido com as ferramentas financeiras do notebook ````/notebooks/financial_tools/financial_tools.ipynb```).
+- Depois de pré-processados, os dados do dataset poderão ser usados pelas ferramentas do envelope de risco.
 ## :open_file_folder: Arquivos/notebooks trabalhados
-- ```notebooks/financial_tools/financial_tools.ipynb``` *(criado)*
+- ```notebooks/risk_envelope/setup_n_epf_sketch.ipynb``` *(criado. Se me lembro bem, com outro nome)*
 ## :white_check_mark: Resultados
 - Nenhum, por enquanto
 ## :bookmark_tabs: Observações
@@ -22,5 +24,5 @@
 ## versionamento
 | Commits | Descrição | Notas | Início/fim | Versão |
 | :--- | :---: | :--- | :--- | :--- |
-| ? | Iniciação da criação do método ```setup()``` | none | 0h00-1h38 | ? |
+| ? | Iniciação da criação do método ```setup()``` | none | 21h55-indeterminado | ? |
 
