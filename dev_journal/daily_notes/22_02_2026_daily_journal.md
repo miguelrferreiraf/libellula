@@ -15,8 +15,7 @@
 - ```notebooks/risk_envelope/epf.ipynb``` *(criado)*
 ## :white_check_mark: Resultados
 - **EXPLÊNDIDOS!**
-- O EPF foi tão extraordinariamente bem sucedido que tive que submetê-lo a uma bateria de testes para saber se não havia um vazamento de dados de alguma coluna do dataset para o modelo de EPF. Os resultados foram negativos! 
-## :bookmark_tabs: Observações
+- O EPF foi tão extraordinariamente bem sucedido que tive que submetê-lo a uma bateria de testes para saber se não havia um vazamento de dados de alguma coluna do dataset para o modelo de EPF. Os resultados foram negativos!
 - AUC: 0.93 (muito alto! Evidência de estrutura preditiva forte ou de data leaking)
 - Executei um script para verificar se há uma única feature no meu dataset que manifesta alta correlação com os resultados da EPF: **NENHUMA!**. Correlação máxima encontrada: 0.559.
 - Exacutamos um ```np.mean(y_train_bin)``` para identificarmos um caso de inflação (=0.9) ou deflação (=0.1) do AUC. Resultado: 0.4958. Exatamente na média que queríamos, indicando targets balanceados: 49,58% de retornos positivos e 50,42% de retornos negativos. Perfeitamente equilibrado
@@ -27,12 +26,15 @@
 - Nosso resultado foi 0.53
 - Dentro da variação esperada para ruído
 - Compatível com aleatório
-- **SÓ PODE SER NATAL!**, é bom demais pra ser verdade!
+- **SÓ PODE SER NATAL!**, é bom demais pra ser verdade! 
+## :bookmark_tabs: Observações
+- O método ```setup()``` para pré-processamento dos dados do dataset e o modelo inicial do EPF foram criados no mesmo notebook: ```notebooks/risk_envelope/setup_n_epf_sketch.ipynb```
+- Posteriormente o EPF foi movido para um notebook próprio, chamado apenas de ```notebooks/epf.ipynb```
+- O método ```setup()``` foi migrado para o formato ```.py``` e agora é acessado pelo EPF via importação. O novo arquivo ```setup.py``` está na pasta ```Liballula/src/```
 ## :thought_balloon: Próximos passos
-- Finalização do método ```setup()``` de pré-processamento
-- Criação do EPF
+- Criar novas ferramentas para o envelope de risco! 
 ## versionamento
 | Commits | Descrição | Notas | Início/fim | Versão |
 | :--- | :---: | :--- | :--- | :--- |
-| ? | Iniciação da criação do método ```setup()``` | none | 21h55-indeterminado | ? |
+| ? | Super EPF criado e operacional | none | indeterminado-indeterminado | ? |
 
