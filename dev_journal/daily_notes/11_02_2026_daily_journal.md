@@ -14,7 +14,7 @@
 > Este é o registro das atividades feitas em cima deste planejamento semanal supracitado.
 
 ## :rocket: Objetivo
-***(Objetivos são programados no planejamento semanal na pasta ```week_pln```).***
+***(Objetivos são programados no planejamento semanal, disponível na na pasta ```week_pln/```).***
 - Criar repositório no Github
 - Repositório deve ser conectado ao Códex do ChatGPT
 - Criar códigos para ferramentas financeiras para dataset OHLC
