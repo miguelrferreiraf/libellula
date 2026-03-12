@@ -1,5 +1,5 @@
 LISTA DE TAREFAS SEMANAIS:
-(09/03/26 - segunda-feira - até 16/03/26 - segunda feira que vem)
+(16/03/26 - segunda-feira - até 23/03/26 - segunda feira que vem)
 
 1) Criar as outras ferramentas do envelope de risco (mais umas duas pelo menos)
 2) Testar a criação de um dataset derivado dos outputs das ferramentas já prontas do envelope.
