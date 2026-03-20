@@ -28,6 +28,7 @@ Quantile 0.9: 0.000862
 - Nosso resultado, portanto, foi bastante satisfatório.
 ## :thought_balloon: Próximos passos
 - Terminar de parametrizar o QF! 
+- Ou não...
 ## versionamento
 | Commits | Descrição | Notas | Início/fim | Versão |
 | :--- | :---: | :--- | :--- | :--- |
