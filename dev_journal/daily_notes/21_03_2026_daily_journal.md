@@ -10,10 +10,10 @@
 - Esta padronização segue o seguinte protocolo:
 > 1. Importação dos dados financeiros (OHLC + indicadores econômicos) ep ré-processamento via método (```setup()```)
 > 2. Criação do modelo/ferramenta do envelope
-3. Aplicação do dataset ao modelo ferramenta recém-criado
-4. Testes de eficiência para detecção de viéses, vazamentos ou quaisquer anomalias estatísticas
-5. Geração de output
-6. Salvamento da ferramenta/modelo  
+> 3. Aplicação do dataset ao modelo ferramenta recém-criado
+> 4. Testes de eficiência para detecção de viéses, vazamentos ou quaisquer anomalias estatísticas
+> 5. Geração de output
+> 6. Salvamento da ferramenta/modelo  
 ## :wrench: Atividades
 - CVaR criado
 ## :open_file_folder: Arquivos/notebooks trabalhados
