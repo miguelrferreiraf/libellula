@@ -8,7 +8,7 @@
 - Criar o CVaR
 - O CVaR (e todas as outras ferramentas e modelo do envelope de risco) deverão ser criadas de forma padronizada para evitar que não possam ser conogregadas num mesmo output geral.
 - Esta padronização segue o seguinte protocolo:
-1. Importação dos dados financeiros (OHLC + indicadores econômicos) ep ré-processamento via método (```setup()```)
+> 1. Importação dos dados financeiros (OHLC + indicadores econômicos) ep ré-processamento via método (```setup()```)
 2. Criação do modelo/ferramenta do envelope
 3. Aplicação do dataset ao modelo ferramenta recém-criado
 4. Testes de eficiência para detecção de viéses, vazamentos ou quaisquer anomalias estatísticas
