@@ -1,7 +1,7 @@
 LISTA DE TAREFAS SEMANAIS:
 (16/03/26 - segunda-feira - até 23/03/26 - segunda feira que vem)
 
-1) Criar as outras ferramentas do envelope de risco (mais umas duas pelo menos)
+1) Criar as outras ferramentas do envelope de risco (mais umas duas pelo menos) ☺
 2) Testar a criação de um dataset derivado dos outputs das ferramentas já prontas do envelope.
 3) Esboçar um TFT preditivo robusto. Não preciso terminá-lo, apenas esboça-lo.
 4) Abrir espaço na criação do TFT para paralelização e distribuição do processamento (não é urgente).
