@@ -2,8 +2,9 @@ LISTA DE TAREFAS SEMANAIS:
 (28/03/26 - domingo - até 04/04/26 -- domingo que vem)
 
 1) O envelope de risco já possui EPF, QF e CVaR. Criar o PDFD
-2) Transformar os outputs (pacotes de decisão) num único dataset
-3) Iniciar um protótipo do TFT preditivo para datasets multivariados
-4) Aplicar o TFT num dataset com rolling window de pelo menos 5% e dataset de pelo menos 5 mil períodos. 
+2) PADRONIZAR O NOTEBOOK E O CÓDIGO DE CADA UM DOS SUPRACITADOS
+3) Transformar os outputs (pacotes de decisão) num único dataset
+4) Iniciar um protótipo do TFT preditivo para datasets multivariados
+5) Aplicar o TFT num dataset com rolling window de pelo menos 5% e dataset de pelo menos 5 mil períodos. 
 
 ☺ = Tarefa cumprida (cumprimentos atualizados ao fim do prazo)
