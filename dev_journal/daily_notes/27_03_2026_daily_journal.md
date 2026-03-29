@@ -21,10 +21,21 @@
 - ```notebooks/financial_tools/PDFD.ipynb``` *(criado)*
 ## :white_check_mark: Resultados
 - PDFD com parâmetros variados, todos bem executados 
+- Janela de risco utilizada:
+```
+risk_window = 252
+```
 - Testes com resultados satisfatórios
 ## :bookmark_tabs: Observações
-Ferramentas criadas:
-- None
+- Teste de PDFD (*sannity checks*) executado sob os seguintes parâmetros de drawndown:
+```
+drawdown_levels = [
+    -0.005,
+    -0.01,
+    -0.02,
+    -0.03
+]
+```
 ## :thought_balloon: Próximos passos
 - Padronização geral de todas as ferramentas financeiras dentro do protocolo! **URGENTE!**
 ## versionamento
