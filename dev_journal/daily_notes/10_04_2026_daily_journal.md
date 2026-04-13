@@ -13,6 +13,7 @@ epf_lower
 epf_width
 epf_asymmetry
 ```
+### **:bangbang:THATS THE SINGLE ONE WHICH IS ACTUALLY DONE!**
 2. Quantile forecasting:
 ```
 q5
@@ -46,6 +47,8 @@ pdfd_03
 > 1. Quantile Forecasting
 > 2. CVaR
 > 3. PDFD
+- O *Quantile Forecasting* parece o mais complicado de se aplicar este protocolo de trabalho (o mesmo que aplicamos no EPF)
+- Então talvez o próximo deva ser o **CVaR**
 ## versionamento
 | Commits | Descrição | Notas | Início/fim | Versão |
 | :--- | :---: | :--- | :--- | :--- |
