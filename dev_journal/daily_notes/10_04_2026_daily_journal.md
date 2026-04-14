@@ -13,7 +13,7 @@ epf_lower
 epf_width
 epf_asymmetry
 ```
-### **:bangbang:THATS THE SINGLE ONE WHICH IS ACTUALLY DONE!**
+### **:bangbang:ATENÇÃO: este é o único que está feito! Temos trabalho!**
 2. Quantile forecasting:
 ```
 q5
