@@ -1,28 +1,27 @@
 # :calendar: 23-04-2026 (thursday)
 ***by: Miguel Ferreira***
 
-> **Ultimamente não tenho feito planejamentos semanais! Contudo, as coisas tem progredido bem, então não vo me preocupar com isso por agora!**
+> **Ultimamente não tenho feito planejamentos semanais! Contudo, as coisas tem progredido bem, então não vou me preocupar com isso por agora!**
 
 ## :rocket: Objetivo
-- Criar finalmente o código de concatenação para todos os datasets (formato '.parquet') criados pelas ferramentas do envelope de risco. 
+- Criar finalmente o código de concatenação para todos os datasets (formato ```.parquet```) criados pelas ferramentas do envelope de risco. 
 - Mas, antes de fazer isso, precisamos ter certeza absoluta de que:
 1. Os notebooks das ferramentas do envelope estão padronizados
-2. Os datasets resultantes estao sincronizados! 
+2. Os datasets resultantes estão sincronizados! 
 ## :wrench: Atividades
-- **Nós padronizamos (pela última vez, se Deus quiser) TODOS OS NOTEBOOKS COM AS FERRAMENTAS DO ENVELOPE DE RISCO. Eles não podem ficar mais padronizados (pelo menos no que concerne ao corpo de texto) do que já estão!**
+- **Nós padronizamos (pela última vez, se Deus quiser) TODOS OS NOTEBOOKS COM AS FERRAMENTAS DO ENVELOPE DE RISCO. Eles não podem ficar mais padronizados do que já estão! (pelo menos no que concerne ao corpo de texto)**
 - Uma vez padronizados, eu iniciei a criação do **'código de concatenação'**, e isso é muito importante.
-- O **'código de concatenação'** é um script que concatena os datesets em formato '.parquet' gerados pelas *ferramentas do envelope de risco + dataset gerado pelo modelo TFT preditivo*, com o propósito de transformar tudo num só dataset a ser analisado pelo **modelo RL (Reinforcement Learning) de gestão de banca**
-- Não sei se a esta altura do campeonato está claro a importância deste fluxo de trabalho, mas:
+- O **'código de concatenação'** é um script que concatena os datesets em formato ```.parquet``` gerados pelas *ferramentas do envelope de risco + dataset gerado pelo modelo TFT preditivo*, com o propósito de transformar tudo num só dataset a ser analisado pelo **modelo RL (Reinforcement Learning) de gestão de banca**
+- Não sei se a esta altura do campeonato está claro a importância deste fluxo de trabalho, mas ei-lo:
 ```
 Fluxo:
 1. As ferramentas do envelope de risco geram outputs que são features com dados de risco estocástico/probabilístico extraídos do dataset original (cotações OHLC)
 2. O modelo TFT preditivo também gera um dataset com previsões
-3. Cada uma das ferramentas gera um dataset contendo essas features
-4. Um código externo, o **código de concatenação**, junta todos estes datasets (do envelope de risco e do TFT preditivo) num só
-5. Este dataset final será usado para treinar o modelo RL de gestão de banca, que é responsável por gerenciar o tamanho das posições no trade e os stops
+3. Um código externo, o **código de concatenação**, junta todos estes datasets (do envelope de risco e do TFT preditivo) num só
+4. Este dataset final será usado para treinar o modelo RL de gestão de banca, que é responsável por gerenciar o tamanho das posições no trade e os stops
 ``` 
 ## :open_file_folder: Arquivos/notebooks trabalhados
-- Olhe o qur fizemos!:
+- Olhe o que fizemos!:
 ```
 ├───combined # Datasets concatenados
 ├───cvar # Contém as features geradas pelo notebook do CVaR
@@ -48,6 +47,9 @@ Fluxo:
 - ```C:\projects\Libellula\data\processed\pdfd\``` *(criado)*
 - ```C:\projects\Libellula\data\processed\predictions\``` *(criado)*
 - ```C:\projects\Libellula\data\processed\qf\``` *(criado)*
+- ```C:\projects\Libellula\notebooks\risk_envelop\concatenation.ipynb``` *(criado)*
+
+Cada um dos arquivos supracitados dentro da pasta ```\processed``` **já contém um dataset no formato ```.parquet``` salvo dentro dele**, criados a partir da execução das células de código responsáveis por... veja você: **criá-los!**, *(no formato ```.parquet``` especificamente)* 
 ## :white_check_mark: Resultados
 - **Satisfatórios**
 ## :bookmark_tabs: Observações
@@ -59,6 +61,6 @@ Fluxo:
 ## versionamento
 | Commits | Descrição | Notas | Início/fim | Versão |
 | :--- | :---: | :--- | :--- | :--- |
-| ```adding first parquet datasets to /data/processed/``` | Simplesmente rodei as células de código que transformavam os datasets gerados pelas ferramentas do envelope em arquivos '.parquet' salvos no diretório recém criado | Os arquivos com os datasets foram criados automaticamente | 11h00 - 18h00 | none |
+| ```adding first parquet datasets to /data/processed/``` | Simplesmente rodei as células de código que transformavam os datasets gerados pelas ferramentas do envelope em arquivos ```.parquet``` salvos no diretório recém criado | Os arquivos com os datasets foram criados automaticamente | 11h00 - 18h00 | none |
 | ```creating concatenation``` | Comecei a criar o código de concatenação, mas ele ainda está testando a sincronização dos datasets gerados pelo envelope | Encontrei um erro de sincronização. Corrijo depois | 11h00 - 18h00 | none |
 
