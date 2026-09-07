@@ -27,6 +27,9 @@ def setup(
 
     df = df.sort_values("Date").reset_index(drop=True)
 
+    if not 0 < train_ratio < 1 or not 0 < val_ratio < 1 or train_ratio + val_ratio >= 1:
+        raise ValueError("train_ratio e val_ratio devem estar entre 0 e 1 e somar menos de 1.")
+
     df["target_return"] = df[target_col].pct_change(horizon).shift(-horizon)
     df["target_direction"] = (df["target_return"] > 0).astype(int)
 
@@ -78,5 +81,8 @@ def setup(
         "y_train": y_train.values,
         "y_val": y_val.values,
         "y_test": y_test.values,
-        "feature_columns": feature_cols
+        "feature_columns": feature_cols,
+        "train_index": df["Date"].iloc[:train_end].to_numpy(),
+        "val_index": df["Date"].iloc[train_end:val_end].to_numpy(),
+        "test_index": df["Date"].iloc[val_end:].to_numpy(),
     }
