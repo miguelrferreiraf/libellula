@@ -194,6 +194,12 @@ Market Data
 
 ---
 
+## Data provenance and reproducibility
+
+The project data catalogue, current file fingerprints, transformation lineage, and known provenance limitations are documented in [data/README.md](data/README.md). The raw source provider, collection timezone, and vendor export parameters were not recorded for the files presently in the repository; they must be supplied at the next data acquisition.
+
+---
+
 ## 8. Research Directions
 
 * Distributional forecasting instead of point forecasting

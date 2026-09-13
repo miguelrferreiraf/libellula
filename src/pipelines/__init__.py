@@ -1,0 +1,1 @@
+"""Pipelines reutilizáveis do Libellula."""
