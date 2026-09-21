@@ -1,0 +1,48 @@
+{
+  "created_at_utc": "2026-09-21T00:32:08.252197+00:00",
+  "risk_features": {
+    "path": "C:\\projects\\Libellula\\data\\processed\\combined\\risk_features.parquet",
+    "sha256": "c76bd517d988b4e88253659defd7fd3229c7ed148697d7dafaf18b68d77a4189"
+  },
+  "tft_predictions": {
+    "path": "C:\\projects\\Libellula\\data\\processed\\predictions\\tft_predictions.parquet",
+    "sha256": "f4aa6c09bffe777508d3efe6bdc29c20e07b8583daacf23f065e148fff64dd4d"
+  },
+  "rl_state": {
+    "path": "C:\\projects\\Libellula\\data\\processed\\rl_state\\rl_state.parquet",
+    "sha256": "455efd5e146c81bb8f30ff457bcf77e0f55101c830a4c0958bcba07062ef082d",
+    "rows": 205,
+    "columns": [
+      "epf_upper",
+      "epf_lower",
+      "epf_width",
+      "epf_asymmetry",
+      "quantile_lower",
+      "q25",
+      "q50",
+      "q75",
+      "quantile_upper",
+      "quantile_width",
+      "quantile_skew",
+      "asymmetry",
+      "cvar_95",
+      "cvar_99",
+      "tail_loss_expectation",
+      "pdfd_005",
+      "pdfd_01",
+      "pdfd_02",
+      "pdfd_03",
+      "pdf_skew",
+      "pdf_kurtosis",
+      "evt_shape",
+      "evt_scale",
+      "evt_var",
+      "evt_cvar",
+      "prediction",
+      "pred_return",
+      "confidence"
+    ],
+    "start": "2024-07-18T00:00:00",
+    "end": "2025-04-30T00:00:00"
+  }
+}
