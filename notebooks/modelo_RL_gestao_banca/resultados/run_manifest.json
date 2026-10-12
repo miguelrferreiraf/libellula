@@ -1,0 +1,132 @@
+{
+  "seed": 42,
+  "initial_capital": 100.0,
+  "episodes": 80,
+  "best_episode": 25,
+  "features": [
+    "epf_upper",
+    "epf_lower",
+    "epf_width",
+    "epf_asymmetry",
+    "quantile_lower",
+    "q25",
+    "q50",
+    "q75",
+    "quantile_upper",
+    "quantile_width",
+    "quantile_skew",
+    "asymmetry",
+    "cvar_95",
+    "cvar_99",
+    "tail_loss_expectation",
+    "pdfd_005",
+    "pdfd_01",
+    "pdfd_02",
+    "pdfd_03",
+    "pdf_skew",
+    "pdf_kurtosis",
+    "evt_shape",
+    "evt_scale",
+    "evt_var",
+    "evt_cvar",
+    "cotation(t)",
+    "prediction(t+1)",
+    "pred_return",
+    "confidence"
+  ],
+  "actions": [
+    [
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.25,
+      0.005,
+      0.005
+    ],
+    [
+      0.25,
+      0.005,
+      0.01
+    ],
+    [
+      0.25,
+      0.01,
+      0.005
+    ],
+    [
+      0.25,
+      0.01,
+      0.01
+    ],
+    [
+      0.5,
+      0.005,
+      0.005
+    ],
+    [
+      0.5,
+      0.005,
+      0.01
+    ],
+    [
+      0.5,
+      0.01,
+      0.005
+    ],
+    [
+      0.5,
+      0.01,
+      0.01
+    ]
+  ],
+  "excluded_transitions": {
+    "2025-01-06 00:00:00": "2025-01-07 00:00:00",
+    "2025-04-18 00:00:00": "2025-04-21 00:00:00"
+  },
+  "max_exposure": 1.0,
+  "max_risk": 0.01,
+  "costs": 0.0,
+  "learning_rate": 0.001,
+  "gamma": 0.99,
+  "entropy_weight": 0.01,
+  "drawdown_penalty": 0.0,
+  "inputs": {
+    "data\\processed\\rl_state\\rl_state.parquet": "123639f25e65e59c77b9a77f564c28232095d33d1f40e6d6b2a550fd32a16d3d",
+    "data\\raw\\EUR_USD.csv": "2fdeed033f3cdbe13218f0368dc81498d315e8beffe74769573f7187c016309d"
+  },
+  "splits": {
+    "train": {
+      "rows": 141,
+      "start": "2024-07-18 00:00:00",
+      "end": "2025-01-31 00:00:00"
+    },
+    "validation": {
+      "rows": 29,
+      "start": "2025-02-04 00:00:00",
+      "end": "2025-03-14 00:00:00"
+    },
+    "test": {
+      "rows": 31,
+      "start": "2025-03-18 00:00:00",
+      "end": "2025-04-30 00:00:00"
+    }
+  },
+  "train_last": {
+    "initial": 100.0,
+    "final": 101.8463134505678,
+    "total_return": 0.018463134505678047,
+    "max_drawdown": 0.01714475467909027,
+    "trades": 126,
+    "win_rate": 0.5158730158730159
+  },
+  "test": {
+    "initial": 100.0,
+    "final": 99.72896184462901,
+    "total_return": -0.0027103815537098397,
+    "max_drawdown": 0.010157438898985571,
+    "trades": 18,
+    "win_rate": 0.5555555555555556
+  }
+}

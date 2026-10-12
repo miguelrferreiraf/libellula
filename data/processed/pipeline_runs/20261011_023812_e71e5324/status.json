@@ -1,0 +1,89 @@
+{
+  "python": "C:\\projects\\Libellula\\.venv\\Scripts\\python.exe",
+  "project_root": "C:\\projects\\Libellula",
+  "planned_steps": [
+    "01_financial_tools",
+    "02_cvar",
+    "03_epf",
+    "04_evt",
+    "05_quantile_forecasting",
+    "06_pdfd",
+    "07_tft",
+    "08_concatenation",
+    "09_rl_state"
+  ],
+  "steps": [
+    {
+      "name": "01_financial_tools",
+      "source": "notebooks/financial_tools/financial_tools.ipynb",
+      "log": "C:\\projects\\Libellula\\data\\processed\\pipeline_runs\\20261011_023812_e71e5324\\01_financial_tools.log",
+      "status": "completed",
+      "returncode": 0,
+      "elapsed_seconds": 8.89
+    },
+    {
+      "name": "02_cvar",
+      "source": "notebooks/risk_envelop/CVaR.ipynb",
+      "log": "C:\\projects\\Libellula\\data\\processed\\pipeline_runs\\20261011_023812_e71e5324\\02_cvar.log",
+      "status": "completed",
+      "returncode": 0,
+      "elapsed_seconds": 5.3
+    },
+    {
+      "name": "03_epf",
+      "source": "notebooks/risk_envelop/EPF.ipynb",
+      "log": "C:\\projects\\Libellula\\data\\processed\\pipeline_runs\\20261011_023812_e71e5324\\03_epf.log",
+      "status": "completed",
+      "returncode": 0,
+      "elapsed_seconds": 4.84
+    },
+    {
+      "name": "04_evt",
+      "source": "notebooks/risk_envelop/EVT.ipynb",
+      "log": "C:\\projects\\Libellula\\data\\processed\\pipeline_runs\\20261011_023812_e71e5324\\04_evt.log",
+      "status": "completed",
+      "returncode": 0,
+      "elapsed_seconds": 75.75
+    },
+    {
+      "name": "05_quantile_forecasting",
+      "source": "notebooks/risk_envelop/QuantileForecasting.ipynb",
+      "log": "C:\\projects\\Libellula\\data\\processed\\pipeline_runs\\20261011_023812_e71e5324\\05_quantile_forecasting.log",
+      "status": "completed",
+      "returncode": 0,
+      "elapsed_seconds": 21.8
+    },
+    {
+      "name": "06_pdfd",
+      "source": "notebooks/risk_envelop/PDFD.ipynb",
+      "log": "C:\\projects\\Libellula\\data\\processed\\pipeline_runs\\20261011_023812_e71e5324\\06_pdfd.log",
+      "status": "completed",
+      "returncode": 0,
+      "elapsed_seconds": 4.73
+    },
+    {
+      "name": "07_tft",
+      "source": "notebooks/Predictive_TFT_model/TFT_prdictive_model.ipynb",
+      "log": "C:\\projects\\Libellula\\data\\processed\\pipeline_runs\\20261011_023812_e71e5324\\07_tft.log",
+      "status": "completed",
+      "returncode": 0,
+      "elapsed_seconds": 132.83
+    },
+    {
+      "name": "08_concatenation",
+      "source": "notebooks/risk_envelop/concatenation/Concatenation.ipynb",
+      "log": "C:\\projects\\Libellula\\data\\processed\\pipeline_runs\\20261011_023812_e71e5324\\08_concatenation.log",
+      "status": "completed",
+      "returncode": 0,
+      "elapsed_seconds": 2.69
+    },
+    {
+      "name": "09_rl_state",
+      "source": "src/pipelines/rl_state.py",
+      "log": "C:\\projects\\Libellula\\data\\processed\\pipeline_runs\\20261011_023812_e71e5324\\09_rl_state.log",
+      "status": "completed",
+      "returncode": 0,
+      "elapsed_seconds": 1.56
+    }
+  ]
+}
