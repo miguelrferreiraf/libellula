@@ -363,4 +363,6 @@ for i, cell in enumerate(cells):
     cell['id'] = f'rl-bank-{i:02d}'
 path = Path(__file__).with_name('modeloRLgestaobanca.ipynb')
 path.write_text(json.dumps(notebook, indent=1, ensure_ascii=False), encoding='utf-8')
+from format_notebook import format_notebook
+format_notebook(path)
 print(path)
