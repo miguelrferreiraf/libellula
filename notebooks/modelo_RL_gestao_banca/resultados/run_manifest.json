@@ -2,7 +2,7 @@
   "seed": 42,
   "initial_capital": 100.0,
   "episodes": 80,
-  "best_episode": 25,
+  "best_episode": 1,
   "features": [
     "epf_upper",
     "epf_lower",
@@ -34,59 +34,17 @@
     "pred_return",
     "confidence"
   ],
-  "actions": [
-    [
-      0.0,
-      0.0,
-      0.0
-    ],
-    [
-      0.25,
-      0.005,
-      0.005
-    ],
-    [
-      0.25,
-      0.005,
-      0.01
-    ],
-    [
-      0.25,
-      0.01,
-      0.005
-    ],
-    [
-      0.25,
-      0.01,
-      0.01
-    ],
-    [
-      0.5,
-      0.005,
-      0.005
-    ],
-    [
-      0.5,
-      0.005,
-      0.01
-    ],
-    [
-      0.5,
-      0.01,
-      0.005
-    ],
-    [
-      0.5,
-      0.01,
-      0.01
-    ]
-  ],
+  "action_space": "continuous_normal_latent",
+  "action_size": 3,
   "excluded_transitions": {
     "2025-01-06 00:00:00": "2025-01-07 00:00:00",
     "2025-04-18 00:00:00": "2025-04-21 00:00:00"
   },
-  "max_exposure": 1.0,
-  "max_risk": 0.01,
+  "exposure_domain": [
+    0.0,
+    1.0
+  ],
+  "exit_prices": "positive_directional",
   "costs": 0.0,
   "learning_rate": 0.001,
   "gamma": 0.99,
@@ -115,18 +73,18 @@
   },
   "train_last": {
     "initial": 100.0,
-    "final": 101.8463134505678,
-    "total_return": 0.018463134505678047,
-    "max_drawdown": 0.01714475467909027,
-    "trades": 126,
-    "win_rate": 0.5158730158730159
+    "final": 102.56602581132888,
+    "total_return": 0.02566025811328876,
+    "max_drawdown": 0.02340091782147513,
+    "trades": 141,
+    "win_rate": 0.48936170212765956
   },
   "test": {
     "initial": 100.0,
-    "final": 99.72896184462901,
-    "total_return": -0.0027103815537098397,
-    "max_drawdown": 0.010157438898985571,
-    "trades": 18,
-    "win_rate": 0.5555555555555556
+    "final": 100.27614217104532,
+    "total_return": 0.002761421710453238,
+    "max_drawdown": 0.012330463336136521,
+    "trades": 31,
+    "win_rate": 0.45161290322580644
   }
 }

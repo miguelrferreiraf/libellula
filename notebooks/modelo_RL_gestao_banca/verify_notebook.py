@@ -38,11 +38,41 @@ env = scope['test_evaluation']
 assert len(env.history) == len(scope['test_idx'])
 np.testing.assert_allclose(env.equity, scope['INITIAL_CAPITAL'] + sum(r['net_pnl'] for r in env.history))
 try:
-    env.step(0)
+    env.step(np.zeros(3))
 except RuntimeError:
     pass
 else:
     raise AssertionError('O ambiente aceitou ação após término.')
 assert env.reset().shape == (33,)
 assert env.equity == scope['INITIAL_CAPITAL'] and not env.history
-print('PASS: notebook completo, long/short, TP/SL/ambos/Close, custos zero, saldo e blocos temporais.')
+
+# Ações contínuas: valores intermediários distintos, sem grade nem teto de risco.
+convert = scope['sacred_outputs']
+grid = np.linspace(-9, 9, 1001)
+outputs = np.array([convert([x, x, x], .01) for x in grid])
+assert len(np.unique(outputs[:, 1])) == len(grid)
+assert len(np.unique(outputs[:, 2])) == len(grid)
+assert (outputs[:, 1] >= 0).all() and (outputs[:, 1] <= 1).all()
+assert outputs[-1, 1] * outputs[-1, 3] > .01
+for direction in (1, -1):
+    for x in (-1000., -7.123, 0., 4.567, 1000.):
+        out = convert([0., x, x], direction)
+        trade = execute(out, dict(Open=100., High=101., Low=99., Close=100.))
+        assert trade['tp'] > 0 and trade['sl'] > 0
+        assert direction * (trade['tp'] - 100.) > 0
+        assert direction * (trade['sl'] - 100.) < 0
+        assert 0 <= 100 * out[1] <= 100
+assert convert([0, 4, 0], 1)[2] > 1  # TP comprado sem teto artificial
+assert convert([0, 0, 4], -1)[3] > 1  # SL vendido sem teto artificial
+torch = scope['torch']
+model = scope['model']
+assert model.log_std.grad is not None and torch.isfinite(model.log_std.grad).all()
+expected = ['timestamp', 'Position_size', 'Take_profit', 'Stop_loss', 'Result', 'Capital_atualizado']
+for history in scope['training_histories']:
+    table = scope['operations_table'](history)
+    assert list(table.columns) == expected and len(table) == len(history)
+    np.testing.assert_allclose(table.Capital_atualizado, scope['INITIAL_CAPITAL'] + table.Result.cumsum())
+    assert (table.Position_size <= history.capital_before).all()
+assert len(scope['training_histories']) == scope['EPISODES']
+assert len(scope['all_operations']) == sum(map(len, scope['training_histories']))
+print('PASS: espaço contínuo, gradientes, preços positivos, exposição, tabelas completas, saldo, execução e blocos temporais.')
