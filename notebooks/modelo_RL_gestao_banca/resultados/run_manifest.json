@@ -1,9 +1,17 @@
 {
-  "seed": 42,
-  "initial_capital": 100.0,
-  "episodes": 80,
-  "best_episode": 1,
-  "features": [
+  "config": {
+    "initial_capital": 100.0,
+    "episodes": 80,
+    "learning_rate": 0.001,
+    "gamma": 0.99,
+    "entropy_weight": 0.01,
+    "drawdown_penalty": 1.0,
+    "seed": 42
+  },
+  "best_episode": 80,
+  "selection": "maximum_validation_reward_sum",
+  "checkpoint": "agent_checkpoint.pt",
+  "feature_columns": [
     "epf_upper",
     "epf_lower",
     "epf_width",
@@ -34,57 +42,32 @@
     "pred_return",
     "confidence"
   ],
-  "action_space": "continuous_normal_latent",
-  "action_size": 3,
-  "excluded_transitions": {
-    "2025-01-06 00:00:00": "2025-01-07 00:00:00",
-    "2025-04-18 00:00:00": "2025-04-21 00:00:00"
-  },
-  "exposure_domain": [
-    0.0,
-    1.0
-  ],
-  "exit_prices": "positive_directional",
-  "costs": 0.0,
-  "learning_rate": 0.001,
-  "gamma": 0.99,
-  "entropy_weight": 0.01,
-  "drawdown_penalty": 0.0,
   "inputs": {
     "data\\processed\\rl_state\\rl_state.parquet": "123639f25e65e59c77b9a77f564c28232095d33d1f40e6d6b2a550fd32a16d3d",
     "data\\raw\\EUR_USD.csv": "2fdeed033f3cdbe13218f0368dc81498d315e8beffe74769573f7187c016309d"
+  },
+  "excluded": {
+    "2025-01-06 00:00:00": "2025-01-07 00:00:00",
+    "2025-04-18 00:00:00": "2025-04-21 00:00:00"
   },
   "splits": {
     "train": {
       "rows": 141,
       "start": "2024-07-18 00:00:00",
-      "end": "2025-01-31 00:00:00"
+      "end": "2025-01-31 00:00:00",
+      "last_execution": "2025-02-03 00:00:00"
     },
     "validation": {
       "rows": 29,
       "start": "2025-02-04 00:00:00",
-      "end": "2025-03-14 00:00:00"
+      "end": "2025-03-14 00:00:00",
+      "last_execution": "2025-03-17 00:00:00"
     },
     "test": {
       "rows": 31,
       "start": "2025-03-18 00:00:00",
-      "end": "2025-04-30 00:00:00"
+      "end": "2025-04-30 00:00:00",
+      "last_execution": "2025-05-01 00:00:00"
     }
-  },
-  "train_last": {
-    "initial": 100.0,
-    "final": 102.56602581132888,
-    "total_return": 0.02566025811328876,
-    "max_drawdown": 0.02340091782147513,
-    "trades": 141,
-    "win_rate": 0.48936170212765956
-  },
-  "test": {
-    "initial": 100.0,
-    "final": 100.27614217104532,
-    "total_return": 0.002761421710453238,
-    "max_drawdown": 0.012330463336136521,
-    "trades": 31,
-    "win_rate": 0.45161290322580644
   }
 }

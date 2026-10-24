@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-24",
+  "notebook_sha256": "9422b79d61f6349d214e7a201d5c3cc82f4894ba3bd18a2ca9615672f6c6ca0c",
+  "original_backup": "notebooks\\modelo_RL_gestao_banca\\.ipynb_checkpoints\\modeloRLgestaobanca-original-20261024.ipynb",
+  "tests": {
+    "sequential_jupyter_kernel_80_episodes": "PASS",
+    "same_session_save_reload_outputs": "PASS",
+    "fresh_process_inference_history_and_optimizer_blocked": "PASS",
+    "sacred_outputs_equivalent_1506_cases": "PASS",
+    "ohlc_long_short_tp_sl_both_close_flat": "PASS",
+    "ledger_capital_and_rewards_all_episodes": "PASS",
+    "normalization_training_only_future_perturbation": "PASS",
+    "temporal_boundaries_and_exact_next_candle": "PASS",
+    "continuous_actions_positive_levels_and_gradients": "PASS",
+    "invalid_observations_checkpoint_and_ruin": "PASS",
+    "eleven_original_stage_titles": "PASS"
+  },
+  "changes_to_learning": {
+    "drawdown_penalty": 1.0,
+    "selection": "maximum_validation_reward_sum"
+  },
+  "limitations": [
+    "Upstream feature causality is not certified by this notebook.",
+    "Small dataset, zero costs and synthetic shorts limit financial conclusions.",
+    "Successful execution does not establish improved risk management."
+  ]
+}
