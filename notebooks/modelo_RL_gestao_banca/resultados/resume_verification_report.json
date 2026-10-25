@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "continuous_vs_split": "4 == 2+2 (pesos, Adam, RNG e métricas exatamente iguais)",
+  "interruption": "2 episódios completos + retomada 2 == referência 4",
+  "episode_count": "cumulativo, verificado até 5",
+  "legacy_inference": "aceito para inferência e recusado para retomada",
+  "incompatible_data_config_feature_order": "recusados",
+  "atomic_write_failure": "checkpoint anterior preservado",
+  "normalizer": "retomada testada com reajuste bloqueado",
+  "best_vs_last": "separação verificada com piora artificial de validação",
+  "new_train": "reinício independente com backups",
+  "date": "2026-10-25",
+  "original_train_comparison": "Pesos selecionados e métricas idênticos ao algoritmo anterior em quatro episódios.",
+  "train_resume_inference": "Células executadas em ordem nos três modos, em processos independentes.",
+  "final_smoke": "Retomadas adicionais até episódio acumulado 7, com metadados da melhor política verificados.",
+  "protected_components": "Onze etapas, 29 features, ator-crítico, outputs, OHLC, recompensa e inferência preservados.",
+  "checkpoint_policy": "training_checkpoint.pt: último estado completo; agent_checkpoint.pt: melhor política, formato 1 compatível.",
+  "legacy_limitation": "O checkpoint antigo permite inferência, mas não recupera Adam/RNG; exige train para criar o primeiro checkpoint completo.",
+  "original_backup": "notebooks\\modelo_RL_gestao_banca\\.ipynb_checkpoints\\modeloRLgestaobanca-pre-resume-20261025.ipynb",
+  "production_inference_checkpoint_sha256": "6d63781c7f8edc6eb990e8860f3b035a796ada605b770c8ea6c86dd3d8fa2415",
+  "notebook_sha256": "5370f11cb488af26ccbbe314e048dda5b75fb7a06f2c42800a1ae696633e3089"
+}
